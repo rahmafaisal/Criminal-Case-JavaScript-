@@ -1,0 +1,229 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    padding-top:30px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: red;
+    min-height:70px;
+    border-bottom:#e8491d 3px solid;
+    border-radius:0 0 60% 60%
+}
+header  h1{
+    margin:0;
+  }
+article {
+    float: right;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+  }
+  .wrapper{
+      float: left;
+      width: 20%;
+      height: 500px;
+  }
+  .frame{
+      width: 90%;
+      height: 90%;
+      background: url('/img/char1.png') no-repeat;
+      background-position: center;
+      background-size: cover 100%
+  }
+  .frame:hover{
+      animation: zoomeffect 5s infinite  ease-in-out;
+  }
+  @keyframes zoomeffect{
+      0%{
+          background-position: center;
+          transform: scale(1,1)
+       }
+    50%{
+        background-position: center;
+        transform: scale(1.1,1.1)
+    }
+    100%{
+        background-position: center;
+        transform: scale(1,1)
+    }
+  }
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Set a style for all buttons */
+input[type="button"] {
+    -moz-box-shadow: 3px 4px 0px 0px #899599;
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+    background-color:#ededed;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color:#3a8a9e;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    margin: 2px 2px;
+    text-align:center;
+    display:inline-block;
+    white-space:nowrap;
+}
+input[type="button"]:hover {
+    background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+    background-color:#bab1ba;
+}
+
+ #back{
+    float: left;
+}
+ #ready{
+    float: right;
+}
+.bridClass{
+  display: inline;
+}
+.brid{
+    width: 70px;
+    height:70px;
+    left: 80%;
+    position: relative;
+    animation: fly 5s infinite ease-in-out;
+}
+@keyframes fly{
+     0%{
+        left:80%;
+         top:5px;
+     }
+     25%{
+         top:90px
+     }
+     50%{
+         top:70px
+     }
+     75%{
+         top:25px
+     }
+     100%{
+        left:0px;
+         top:102px;
+     }
+
+}
+  /* Style the footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 600px) {
+     article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* final html*/
+div.cardDiv{
+      padding: 0 50px;
+      width: 350px;
+      height: 400px;
+      background: #2e517d;
+      position: absolute;
+      left: 50%;
+      top: 50%; 
+      transform: translate(-50%,-50%);
+      perspective: 1000px;
+  } 
+  div.cardDiv div#cover{
+      width: 270px;
+      height: 400px;
+      position: absolute;
+      left: 40px;
+  }
+  div.cardDiv div#cover figure{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+  }
+  div.cardDiv div#cover figure.front{
+    background: url('/img/challenge2.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+div.cardDiv div#cover figure.back{
+    background: url('/img/challenge1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    transform: rotateY(180deg)
+}
+#challengeBtn{
+    position: absolute;
+      width: 50%;
+      bottom: 20px;
+      left: 25%;
+}
+.cardCI{
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+#correct{
+    float: left;
+    width: 47%; 
+    margin-left: 1px   
+}
+#incorrect{
+    float: right;
+    width: 49%;
+}
+#resultImg{
+   width: 40%;
+   margin: auto
+}
+#doctor{
+    width: 70%;
+}
+#teacher{
+    width: 130%;
+}
+

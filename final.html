@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final</title>
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+    <div class="cardDiv ">
+        <div id="cover">
+            <figure class="front">
+                 <input type="button" value="Challenge" id="challengeBtn">
+            </figure>
+            <figure class="back"></figure>
+        </div>
+        <div class="cardCI"> 
+            <div class="resultContainer">
+                <p style="display:none">Doctor</p>
+                <img style="display:none" id="resultImg">
+                <div id="correct"> 
+                    <p class="resultText">Doctor</p>
+                    <img src="img/doctor.png" id="doctor"> 
+                </div>
+                <div id="incorrect">
+                    <p class="resultText"> Teacher</p>
+                    <img src="img/teacher.png" id="teacher"> 
+                </div>
+           </div>
+            <p id="guess">Guess who did this</p>
+        </div>
+    </div>
+    <script src="/js/final.js"></script>
+</body>
+</html>
