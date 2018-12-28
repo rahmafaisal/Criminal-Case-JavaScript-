@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+.bgimg-1 {
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Gun-Knife-Free-Wallpapers-HD.jpg");
+    height: 100%;
+}  
+#center{
+    display: inline-block;
+    margin: auto;
+    margin-top: 17%;
+    margin-left: 45%;
+    text-align: center;
+}
+.b1{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .b1:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .b1:before,.b1:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .b1:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .b1:hover:before,.b1:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  #Credits{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+}
+#Badges{
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+.b2{
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    background-color: #777 ;
+    border-color: black;
+}
+.b2:hover{
+    color: black;
+    background-color: white;
+}
